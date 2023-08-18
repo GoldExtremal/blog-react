@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+
+.ArticlePage {
+    display: flex;
+    justify-content: center;
+
+    .article_container {
+        margin: calc(100vh/720*60) 0;
+        width: calc(100vw/1280*876);
+
+        .title {
+            color: #6EEB83;
+            font-family: DM Serif Display;
+            font-size: calc(100vw/1440*40);
+            margin-bottom: calc(100vh/720*12);
+        }
+
+        .author {
+            margin-left: calc(100vw/1440*20);
+            font-size: calc(100vw/1440*20);
+            color: #A5A5A5;
+            font-weight: 200;
+            line-height: normal;
+            margin-bottom: calc(100vh/720*32);
+        }
+
+        .article_text {
+            color: #FFF;
+            font-family: Lexend Deca;
+            font-size: calc(100vw/1440*20);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            white-space: pre-line;
+        }
+
+        .article_text:first-letter {
+            font-size: calc(100vw/1440*64);
+        }
+    }
+}

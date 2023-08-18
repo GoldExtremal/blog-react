@@ -1,0 +1,72 @@
+.Homepage {
+    width: 100%;
+
+    .homepage_container {
+        margin-top: calc(100vw/1440*70);
+        margin-left: calc(100vw/1440*(95 + 53));
+        margin-right: calc(100vw/1440*155);
+        padding-bottom: calc(100vw/1440*44);
+
+        .title {
+            font-family: DM Serif Display;
+            font-size: calc(100vw/1440*32);
+            color: #6EEB83;
+            margin-bottom: calc(100vw/1440*36);
+        }
+
+        .description {
+            margin-bottom: calc(100vw/1440*16);
+            line-height: calc(100vw/1440*22);
+            text-indent: calc(100vw/1440*50);
+            font-size: calc(100vw/1440*16);
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: calc(100vw/1440*36);
+            margin-bottom: calc(100vw/1440*36);
+
+            .block_name {
+                font-family: DM Serif Display;
+                font-size: calc(100vw/1440*24);
+                color: #6EEB83;
+                margin-bottom: calc(100vw/1440*36);
+            }
+
+            .block_items {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .block_item {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100vw/1440*340);
+                    height: calc(100vw/1440*230);
+                    border: calc(100vw/1440) solid #6EEB83;
+                    border-radius: calc(100vw/1440*10) calc(100vw/1440*100) / calc(100vw/1440*120) calc(100vw/1440*100);
+                    text-align: center;
+                    padding: calc(100vw/1440*20);
+
+                    .item_title {
+                        font-size: calc(100vw/1440*18);
+                        margin-bottom: calc(100vw/1440*20);
+                        font-family: DM Serif Display;
+                        color: #6EEB83;
+                    }
+
+                    .item_text {
+                        font-size: calc(100vw/1440*12);
+                        line-height: calc(100vw/1440*22);
+                        font-style: italic;
+                        
+                        text-align: start;
+                        text-indent: calc(100vw/1440*30);
+                    }
+                }
+            }
+        }
+    }
+}

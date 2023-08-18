@@ -1,0 +1,29 @@
+.Navbar {
+    position: fixed;
+    height: 100vh;
+    width: calc(100vw/1440*95);
+    border-right: calc(100vw/1440*1) solid #6EEB83;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+
+
+    .navbar_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            width: calc(100vw/1440*40);
+            height: calc(100vw/1440*40);
+            margin-bottom: calc(100vw/1440*10);
+        }
+
+        p {
+            font-size: calc(100vw/1440*16);
+        }
+    }
+}

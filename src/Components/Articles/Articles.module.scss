@@ -1,0 +1,10 @@
+.Articles {
+    width: 100%;
+
+    .articles_container {
+        margin-top: calc(100vw/1440*70);
+        margin-left: calc(100vw/1440*(95 + 53));
+        margin-right: calc(100vw/1440*155);
+        padding-bottom: calc(100vw/1440*44);
+    }
+}
