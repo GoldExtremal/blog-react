@@ -1,26 +1,31 @@
-import Classes from './Articles.module.scss'
+import Classes from './NewsFeedPage.module.scss'
 import Navbar from '../Navbar/Navbar'
 import Article from '../Article/Article'
 
 
-function Articles() {
+function NewsFeedPage() {
 
     return (
-        <div className={Classes.Articles}>
+        <div className={Classes.NewsFeedPage}>
             <Navbar />
 
             <div className={Classes.articles_container}>
-                <Article 
+                <Article
                     date=''
                     author=''
                     title=''
                     text=''
                     tags={[]}
                 />
+
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
             </div>
 
         </div>
     )
 }
 
-export default Articles
+export default NewsFeedPage

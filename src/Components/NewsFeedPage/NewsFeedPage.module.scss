@@ -1,0 +1,11 @@
+.NewsFeedPage {
+    width: 100%;
+
+    .articles_container {
+        padding-top: calc(100vh/720*70);
+        padding-bottom: calc(100vh/720*30);
+        margin-left: calc(100vw/1280*(95 + 53));
+        margin-right: calc(100vw/1280*155);
+        // border: solid 1px red;
+    }
+}
