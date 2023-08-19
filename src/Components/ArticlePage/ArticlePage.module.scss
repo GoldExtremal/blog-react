@@ -21,7 +21,7 @@
             color: #A5A5A5;
             font-weight: 200;
             line-height: normal;
-            margin-bottom: calc(100vh/720*32);
+            margin-bottom: calc(100vh/720*40);
         }
 
         .article_text {
@@ -36,6 +36,7 @@
 
         .article_text:first-letter {
             font-size: calc(100vw/1440*64);
+            line-height: calc(100vw/1440*20);
         }
     }
 }
