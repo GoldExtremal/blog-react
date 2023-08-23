@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { createElement } from 'react'
 import Classes from './Article.module.scss'
 
 function Article(props) {
@@ -17,19 +18,8 @@ function Article(props) {
             </div>
 
             <div className={Classes.tags}>
-                {/* развернуть массив в N элементов */}
-                <div>tag</div>
-                <div>tag</div>
+                {props.tags.map(tag => createElement('div', { className: Classes.tag, key:tag }, `#${tag}`))}
             </div>
-
-
-            {/* 
-            {props.date}
-            {props.author}
-            {props.title}
-            {props.text}
-            tags={[]}
-             */}
         </div>
     )
 }
