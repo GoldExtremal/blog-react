@@ -1,24 +1,33 @@
 import Classes from './Navbar.module.scss'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
-    
+    const isAuthorized = JSON.parse(localStorage.getItem('isAuthorized'))
+    let linkDirection;
+
+    if (isAuthorized == false) {
+        linkDirection = '/login'
+    } else {
+        linkDirection = '/profile'
+    }
+
     return (
-        <ul className={Classes.Navbar}>
-            <li className={Classes.navbar_item}>
+        <nav className={Classes.Navbar}>
+            <Link to={linkDirection} className={Classes.navbar_item}>
                 <img src="/src/assets/profile_icon.svg" alt="" />
                 <p>profile</p>
-            </li>
+            </Link>
 
-            <li className={Classes.navbar_item}>
+            <Link to='/articles' className={Classes.navbar_item}>
                 <img src="/src/assets/articles_icon.svg" alt="" />
                 <p>articles</p>
-            </li>
+            </Link>
 
-            <li className={Classes.navbar_item}>
+            <Link to='/' className={Classes.navbar_item}>
                 <img src="/src/assets/home_icon.svg" alt="" />
                 <p>home</p>
-            </li>
-        </ul>
+            </Link>
+        </nav>
     )
 }
 
