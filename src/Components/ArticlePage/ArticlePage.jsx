@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import Classes from './ArticlePage.module.scss'
+import { useParams } from 'react-router-dom'
 
 function ArticlePage(props) {
-   
+    const {id} = useParams();
+
     return (
         <div className={Classes.ArticlePage}>
             <div className={Classes.article_container}>
@@ -13,6 +15,7 @@ function ArticlePage(props) {
                 </div>
                 <div className={Classes.article_text}>{props.text}</div>
             </div>
+            {id}
         </div>
     )
 }

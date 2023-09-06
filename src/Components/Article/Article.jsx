@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createElement } from 'react'
+import { Link } from 'react-router-dom'
 import Classes from './Article.module.scss'
 
 function Article(props) {
@@ -13,7 +14,7 @@ function Article(props) {
                 </div>
 
                 <div className={Classes.feed}>
-                    <h3 className={Classes.title}>{props.title}</h3>
+                    <Link to='/login' className={Classes.title}>{props.title}</Link>
                     <div className={Classes.text}>{props.text}</div>
                 </div>
             </div>
