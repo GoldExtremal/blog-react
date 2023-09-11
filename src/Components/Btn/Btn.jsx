@@ -4,7 +4,7 @@ import Classes from './Btn.module.scss'
 function Btn(props) {
 
     return (
-        <button className={Classes.Btn}>{props.name}</button>
+        <button type='button' className={Classes.Btn}>{props.name}</button>
     )
 }
 
